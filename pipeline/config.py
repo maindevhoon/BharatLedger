@@ -87,8 +87,19 @@ class Config:
 
     def __post_init__(self) -> None:
         # Ensure data directories exist so first-run scripts don't fail on missing folders.
+        # Skip entirely if a directory already exists (the case on every read-only deployment
+        # filesystem, e.g. Vercel — attempting mkdir there raises OSError/EROFS even with
+        # exist_ok=True, since the read-only check happens before the exists check).
         for d in (self.raw_pdf_dir, self.synthetic_dir, self.seed_dir, self.sqlite_path.parent):
-            d.mkdir(parents=True, exist_ok=True)
+            if d.exists():
+                continue
+            try:
+                d.mkdir(parents=True, exist_ok=True)
+            except OSError:
+                # Read-only filesystem and the directory doesn't exist — nothing we can do at
+                # import time; let downstream code fail with a clearer error if it actually
+                # needs to write there.
+                pass
 
 
 config = Config()
