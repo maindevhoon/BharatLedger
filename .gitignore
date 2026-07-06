@@ -7,7 +7,7 @@ __pycache__/
 .env
 
 # Data (generated, not source-controlled — regenerate via pipeline scripts)
-data/bharat_ledger.sqlite
+# Note: data/bharat_ledger.sqlite IS tracked (small, required for the deployed API to serve data)
 data/synthetic/*.csv
 data/synthetic/*.parquet
 # Real government PDFs ARE tracked (small, and the provenance for the flagship project)
@@ -19,5 +19,9 @@ web/dist/
 # OS
 .DS_Store
 
-# Internal planning notes — not part of the public repo
+# Internal planning/process notes — not part of the public repo
 agent.md
+PLAN.md
+pitch-deck-content.md
+docs/*.md
+Prototype Submission Deck*.pdf
