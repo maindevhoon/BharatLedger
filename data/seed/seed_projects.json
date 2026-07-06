@@ -1,0 +1,624 @@
+[
+  {
+    "project": {
+      "project_id": "in-hr-roads-dwarka-expressway-2018",
+      "country": "IN",
+      "state": "Haryana",
+      "sector": "roads",
+      "name": "Dwarka Expressway (NH-48 Delhi-Gurugram decongestion)",
+      "year": 2018,
+      "sanctioned_cr": 7287.29,
+      "disbursed_cr": 6922.93,
+      "utilized_cr": 6777.18,
+      "outcome_value": 29.06,
+      "outcome_unit": "km",
+      "description": "14-lane urban expressway (8-lane elevated + 6-lane at-grade) built parallel to NH-48 to decongest Delhi-Gurugram traffic; dense NCR land acquisition and elevated structure across its length.",
+      "cost_per_unit_cr": 233.2134
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-hr-roads-dwarka-expressway-2018-doc1",
+        "project_id": "in-hr-roads-dwarka-expressway-2018",
+        "source_type": "cag_report",
+        "title": "CAG Report No. 19 of 2023 — Bharatmala Pariyojana Phase-I",
+        "url_or_path": "data/raw_pdfs/cag_report_19_2023_bharatmala.pdf",
+        "claimed_sanctioned_cr": 7287.29,
+        "claimed_disbursed_cr": 6922.93,
+        "claimed_utilized_cr": 6777.18,
+        "extracted_at": "2026-07-06T16:30:16.658964+00:00",
+        "extraction_method": "manual"
+      },
+      {
+        "doc_id": "in-hr-roads-dwarka-expressway-2018-doc2",
+        "project_id": "in-hr-roads-dwarka-expressway-2018",
+        "source_type": "union_budget",
+        "title": "NHAI Sanction Order Summary (MoRTH, Jan-Mar 2018)",
+        "url_or_path": "synthetic://union_budget/in-hr-roads-dwarka-expressway-2018",
+        "claimed_sanctioned_cr": 7287.29,
+        "claimed_disbursed_cr": 7050.0,
+        "claimed_utilized_cr": 6777.18,
+        "extracted_at": "2026-07-06T16:30:16.659089+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-hr-roads-dwarka-expressway-2018",
+      "justification_score": 22,
+      "justification_rationale": "Even after applying the largest terrain premium in our model (urban, 2.6x) and crediting the project's genuinely unusual scope (elevated 14-lane structure), the reported cost of ₹250.77 cr/km remains roughly 9-11x above the comparable urban-terrain benchmark band, and about 13.8x the programme's own approved norm per CAG's audit. The elevated/wide-corridor scope justifies a premium, but not one of this magnitude on the evidence available. This cost warrants closer public review; it is not, on its own, evidence of wrongdoing.",
+      "transparency_score": 99,
+      "transparency_conflicts": [],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "Actual per-km cost is far above the programme's own approved norm.",
+                "evidence": "CAG Report No. 19/2023 records this corridor at ₹250.77 cr/km against the CCEA-approved Bharatmala norm of ₹18.20 cr/km for comparable national highway corridors.",
+                "figure": "13.8x the CCEA-approved benchmark"
+              },
+              {
+                "claim": "The scale of overrun is unusual even among urban highway projects.",
+                "evidence": "Within our urban-terrain benchmark band (median ≈ ₹20.8 cr/km, p75 ≈ ₹27 cr/km), this project sits roughly 9-11x above the p75 mark.",
+                "figure": "≈11x above the urban-terrain p75 benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "This is a substantially larger structure than a typical highway km.",
+                "evidence": "The corridor is a 14-lane facility (8-lane elevated viaduct + 6-lane at-grade road), not a standard at-grade highway — elevated construction alone typically carries a multi-fold cost premium.",
+                "figure": "8 of 14 lanes are elevated structure"
+              },
+              {
+                "claim": "Land acquisition in this corridor is among the costliest in the country.",
+                "evidence": "The alignment runs through dense NCR (Delhi-Gurugram) urban territory, consistent with our urban-terrain benchmark already pricing a 2.6x premium over plain terrain.",
+                "figure": "urban terrain multiplier already applied: 2.6x plain"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "needs_review",
+            "score": 22,
+            "rationale": "Even after applying the largest terrain premium in our model (urban, 2.6x) and crediting the project's genuinely unusual scope (elevated 14-lane structure), the reported cost of ₹250.77 cr/km remains roughly 9-11x above the comparable urban-terrain benchmark band, and about 13.8x the programme's own approved norm per CAG's audit. The elevated/wide-corridor scope justifies a premium, but not one of this magnitude on the evidence available. This cost warrants closer public review; it is not, on its own, evidence of wrongdoing."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659165+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "needs_review",
+      "transparency_band": "consistent"
+    }
+  },
+  {
+    "project": {
+      "project_id": "in-tg-water-kaleshwaram-component-2019",
+      "country": "IN",
+      "state": "Telangana",
+      "sector": "water",
+      "name": "Kaleshwaram Lift Irrigation Scheme — Package 8 pump house component (illustrative)",
+      "year": 2019,
+      "sanctioned_cr": 4200.0,
+      "disbursed_cr": 5450.0,
+      "utilized_cr": 5100.0,
+      "outcome_value": 380.0,
+      "outcome_unit": "mld",
+      "description": "Illustrative component of a large multi-stage lift irrigation scheme; high-capacity pump houses lifting water across a significant elevation gain. Figures below are invented for this prototype, inspired by widely-reported cost escalation on this real programme, and are not extracted from a specific source document.",
+      "cost_per_unit_cr": 13.4211
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-tg-water-kaleshwaram-component-2019-doc1",
+        "project_id": "in-tg-water-kaleshwaram-component-2019",
+        "source_type": "state_budget",
+        "title": "Telangana State Budget Document (illustrative)",
+        "url_or_path": "synthetic://state_budget/in-tg-water-kaleshwaram-component-2019",
+        "claimed_sanctioned_cr": 4200.0,
+        "claimed_disbursed_cr": 5450.0,
+        "claimed_utilized_cr": 5100.0,
+        "extracted_at": "2026-07-06T16:30:16.659107+00:00",
+        "extraction_method": "manual"
+      },
+      {
+        "doc_id": "in-tg-water-kaleshwaram-component-2019-doc2",
+        "project_id": "in-tg-water-kaleshwaram-component-2019",
+        "source_type": "cag_report",
+        "title": "State Audit Report excerpt (illustrative)",
+        "url_or_path": "synthetic://cag_report/in-tg-water-kaleshwaram-component-2019",
+        "claimed_sanctioned_cr": 4650.0,
+        "claimed_disbursed_cr": 8500.0,
+        "claimed_utilized_cr": 8200.0,
+        "extracted_at": "2026-07-06T16:30:16.659110+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-tg-water-kaleshwaram-component-2019",
+      "justification_score": 29,
+      "justification_rationale": "The two illustrative sources disagree substantially on sanctioned, disbursed, and utilized figures alike (utilized ranges from ₹5,100 cr to ₹8,200 cr), which sharply limits confidence in any single figure here. Even at the lower reported figure, cost per MLD exceeds the plain-terrain benchmark band, and the lift-scheme cost premium argument is plausible but not quantified in evidence available here. This combination of substantial source disagreement and above-benchmark cost warrants closer public review of the underlying records.",
+      "transparency_score": 58,
+      "transparency_conflicts": [
+        {
+          "field": "sanctioned_cr",
+          "source_a": "Telangana State Budget Document (illustrative)",
+          "value_a": 4200.0,
+          "source_b": "State Audit Report excerpt (illustrative)",
+          "value_b": 4650.0,
+          "delta_cr": 450.0
+        },
+        {
+          "field": "disbursed_cr",
+          "source_a": "Telangana State Budget Document (illustrative)",
+          "value_a": 5450.0,
+          "source_b": "State Audit Report excerpt (illustrative)",
+          "value_b": 8500.0,
+          "delta_cr": 3050.0
+        },
+        {
+          "field": "utilized_cr",
+          "source_a": "Telangana State Budget Document (illustrative)",
+          "value_a": 5100.0,
+          "source_b": "State Audit Report excerpt (illustrative)",
+          "value_b": 8200.0,
+          "delta_cr": 3100.0
+        }
+      ],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "Reported utilized spend is well above the sanctioned amount with no revised sanction shown in these sources.",
+                "evidence": "Utilized figures across the two illustrative sources range from ₹5,100 cr to ₹8,200 cr against sanctioned figures of ₹4,200-4,650 cr.",
+                "figure": "up to ≈1.95x the lower reported sanction"
+              },
+              {
+                "claim": "Cost per MLD is above the water-sector benchmark for this terrain.",
+                "evidence": "At the higher reported utilized figure, cost/MLD sits above our plain-terrain p75 benchmark.",
+                "figure": "≈1.9x median plain-terrain benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "Lift irrigation with a large elevation gain carries genuinely higher energy and civil costs than gravity-fed schemes.",
+                "evidence": "High-lift pump house components are not directly comparable to standard plain-terrain water benchmarks.",
+                "figure": "lift-scheme cost structure not fully captured by terrain benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "needs_review",
+            "score": 29,
+            "rationale": "The two illustrative sources disagree substantially on sanctioned, disbursed, and utilized figures alike (utilized ranges from ₹5,100 cr to ₹8,200 cr), which sharply limits confidence in any single figure here. Even at the lower reported figure, cost per MLD exceeds the plain-terrain benchmark band, and the lift-scheme cost premium argument is plausible but not quantified in evidence available here. This combination of substantial source disagreement and above-benchmark cost warrants closer public review of the underlying records."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659243+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "needs_review",
+      "transparency_band": "sources_conflict"
+    }
+  },
+  {
+    "project": {
+      "project_id": "in-br-roads-pmgsy-rural-2021",
+      "country": "IN",
+      "state": "Bihar",
+      "sector": "roads",
+      "name": "PMGSY Rural Road Connectivity Package (illustrative)",
+      "year": 2021,
+      "sanctioned_cr": 210.0,
+      "disbursed_cr": 205.0,
+      "utilized_cr": 198.0,
+      "outcome_value": 42.0,
+      "outcome_unit": "km",
+      "description": "Illustrative plain-terrain rural road connectivity package under PMGSY-style norms; standard construction conditions.",
+      "cost_per_unit_cr": 4.7143
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-br-roads-pmgsy-rural-2021-doc1",
+        "project_id": "in-br-roads-pmgsy-rural-2021",
+        "source_type": "union_budget",
+        "title": "Union Budget PMGSY allocation summary (illustrative)",
+        "url_or_path": "synthetic://union_budget/in-br-roads-pmgsy-rural-2021",
+        "claimed_sanctioned_cr": 210.0,
+        "claimed_disbursed_cr": 205.0,
+        "claimed_utilized_cr": 198.0,
+        "extracted_at": "2026-07-06T16:30:16.659120+00:00",
+        "extraction_method": "manual"
+      },
+      {
+        "doc_id": "in-br-roads-pmgsy-rural-2021-doc2",
+        "project_id": "in-br-roads-pmgsy-rural-2021",
+        "source_type": "state_budget",
+        "title": "Bihar State Budget rural roads statement (illustrative)",
+        "url_or_path": "synthetic://state_budget/in-br-roads-pmgsy-rural-2021",
+        "claimed_sanctioned_cr": 212.0,
+        "claimed_disbursed_cr": 204.0,
+        "claimed_utilized_cr": 199.0,
+        "extracted_at": "2026-07-06T16:30:16.659122+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-br-roads-pmgsy-rural-2021",
+      "justification_score": 88,
+      "justification_rationale": "Cost per km falls close to the plain-terrain benchmark median, and both sources report closely matching figures. No unusual scope or terrain factor is claimed or needed to explain the cost. This spend appears reasonable on the evidence available.",
+      "transparency_score": 99,
+      "transparency_conflicts": [],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "No material overrun found relative to the plain-terrain benchmark.",
+                "evidence": "Cost per km sits within the p25-p75 band for plain-terrain road construction.",
+                "figure": "within normal benchmark range"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "Standard plain-terrain construction with no unusual scope.",
+                "evidence": "Sanctioned, disbursed, and utilized figures are close together across both sources, consistent with routine execution.",
+                "figure": "cost/km within 5% of benchmark median"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "well_justified",
+            "score": 88,
+            "rationale": "Cost per km falls close to the plain-terrain benchmark median, and both sources report closely matching figures. No unusual scope or terrain factor is claimed or needed to explain the cost. This spend appears reasonable on the evidence available."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659277+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "well_justified",
+      "transparency_band": "consistent"
+    }
+  },
+  {
+    "project": {
+      "project_id": "in-kl-health-district-hospital-2022",
+      "country": "IN",
+      "state": "Kerala",
+      "sector": "health",
+      "name": "District Hospital Capacity Expansion (illustrative)",
+      "year": 2022,
+      "sanctioned_cr": 145.0,
+      "disbursed_cr": 140.0,
+      "utilized_cr": 133.0,
+      "outcome_value": 220.0,
+      "outcome_unit": "beds",
+      "description": "Illustrative coastal-terrain district hospital bed capacity expansion, including new ward blocks and equipment.",
+      "cost_per_unit_cr": 0.6045
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-kl-health-district-hospital-2022-doc1",
+        "project_id": "in-kl-health-district-hospital-2022",
+        "source_type": "state_budget",
+        "title": "Kerala State Health Budget statement (illustrative)",
+        "url_or_path": "synthetic://state_budget/in-kl-health-district-hospital-2022",
+        "claimed_sanctioned_cr": 145.0,
+        "claimed_disbursed_cr": 140.0,
+        "claimed_utilized_cr": 133.0,
+        "extracted_at": "2026-07-06T16:30:16.659128+00:00",
+        "extraction_method": "manual"
+      },
+      {
+        "doc_id": "in-kl-health-district-hospital-2022-doc2",
+        "project_id": "in-kl-health-district-hospital-2022",
+        "source_type": "cag_report",
+        "title": "State health infrastructure audit excerpt (illustrative)",
+        "url_or_path": "synthetic://cag_report/in-kl-health-district-hospital-2022",
+        "claimed_sanctioned_cr": 146.0,
+        "claimed_disbursed_cr": 141.0,
+        "claimed_utilized_cr": 134.0,
+        "extracted_at": "2026-07-06T16:30:16.659130+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-kl-health-district-hospital-2022",
+      "justification_score": 66,
+      "justification_rationale": "Cost per bed is moderately above the coastal-terrain benchmark median but within the normal p75 range, and the stated scope (new construction plus equipment) plausibly explains part of the premium. Both sources report closely matching figures. This spend is partially justified by scope; the remaining gap above the median is not fully explained by the evidence here.",
+      "transparency_score": 99,
+      "transparency_conflicts": [],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "Cost per bed is moderately above the coastal-terrain median.",
+                "evidence": "Utilized cost per bed sits above the benchmark median but within the p75 band.",
+                "figure": "≈1.2x median coastal-terrain benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "New ward construction includes equipment costs not always captured in bare per-bed benchmarks.",
+                "evidence": "Scope includes new ward blocks and medical equipment, which the project description states explicitly.",
+                "figure": "equipment + new-build scope"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "partially_justified",
+            "score": 66,
+            "rationale": "Cost per bed is moderately above the coastal-terrain benchmark median but within the normal p75 range, and the stated scope (new construction plus equipment) plausibly explains part of the premium. Both sources report closely matching figures. This spend is partially justified by scope; the remaining gap above the median is not fully explained by the evidence here."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659296+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "partially_justified",
+      "transparency_band": "consistent"
+    }
+  },
+  {
+    "project": {
+      "project_id": "in-mp-education-school-mission-2020",
+      "country": "IN",
+      "state": "Madhya Pradesh",
+      "sector": "education",
+      "name": "School Infrastructure Mission Package (illustrative)",
+      "year": 2020,
+      "sanctioned_cr": 95.0,
+      "disbursed_cr": 93.0,
+      "utilized_cr": 91.0,
+      "outcome_value": 28.0,
+      "outcome_unit": "schools",
+      "description": "Illustrative plain-terrain school construction/upgrade package across multiple districts.",
+      "cost_per_unit_cr": 3.25
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-mp-education-school-mission-2020-doc1",
+        "project_id": "in-mp-education-school-mission-2020",
+        "source_type": "union_budget",
+        "title": "Union Budget education transfer statement (illustrative)",
+        "url_or_path": "synthetic://union_budget/in-mp-education-school-mission-2020",
+        "claimed_sanctioned_cr": 95.0,
+        "claimed_disbursed_cr": 93.0,
+        "claimed_utilized_cr": 91.0,
+        "extracted_at": "2026-07-06T16:30:16.659137+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-mp-education-school-mission-2020",
+      "justification_score": 79,
+      "justification_rationale": "Cost per school is close to the plain-terrain benchmark median, with only a small premium that falls within the normal p25-p75 range. Only one source document is available for this project, so the transparency assessment is limited to a single source rather than confirmed cross-source agreement.",
+      "transparency_score": null,
+      "transparency_conflicts": [],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "Cost per school is close to but slightly above the plain-terrain median.",
+                "evidence": "Utilized cost per school sits just above the benchmark median.",
+                "figure": "≈1.1x median plain-terrain benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "Slight premium is consistent with routine multi-district execution costs.",
+                "evidence": "No unusual scope claimed; the small premium over median is within normal variation.",
+                "figure": "within p25-p75 benchmark band"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "well_justified",
+            "score": 79,
+            "rationale": "Cost per school is close to the plain-terrain benchmark median, with only a small premium that falls within the normal p25-p75 range. Only one source document is available for this project, so the transparency assessment is limited to a single source rather than confirmed cross-source agreement."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659313+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "well_justified",
+      "transparency_band": "single_source"
+    }
+  },
+  {
+    "project": {
+      "project_id": "in-rj-energy-solar-park-2023",
+      "country": "IN",
+      "state": "Rajasthan",
+      "sector": "energy",
+      "name": "Solar Power Park Capacity Addition (illustrative)",
+      "year": 2023,
+      "sanctioned_cr": 520.0,
+      "disbursed_cr": 505.0,
+      "utilized_cr": 480.0,
+      "outcome_value": 95.0,
+      "outcome_unit": "mw",
+      "description": "Illustrative plain-terrain utility-scale solar park capacity addition.",
+      "cost_per_unit_cr": 5.0526
+    },
+    "source_documents": [
+      {
+        "doc_id": "in-rj-energy-solar-park-2023-doc1",
+        "project_id": "in-rj-energy-solar-park-2023",
+        "source_type": "union_budget",
+        "title": "Union Budget renewable energy allocation (illustrative)",
+        "url_or_path": "synthetic://union_budget/in-rj-energy-solar-park-2023",
+        "claimed_sanctioned_cr": 520.0,
+        "claimed_disbursed_cr": 505.0,
+        "claimed_utilized_cr": 480.0,
+        "extracted_at": "2026-07-06T16:30:16.659143+00:00",
+        "extraction_method": "manual"
+      },
+      {
+        "doc_id": "in-rj-energy-solar-park-2023-doc2",
+        "project_id": "in-rj-energy-solar-park-2023",
+        "source_type": "state_budget",
+        "title": "Rajasthan State Energy Budget statement (illustrative)",
+        "url_or_path": "synthetic://state_budget/in-rj-energy-solar-park-2023",
+        "claimed_sanctioned_cr": 518.0,
+        "claimed_disbursed_cr": 503.0,
+        "claimed_utilized_cr": 479.0,
+        "extracted_at": "2026-07-06T16:30:16.659145+00:00",
+        "extraction_method": "manual"
+      }
+    ],
+    "verdict": {
+      "project_id": "in-rj-energy-solar-park-2023",
+      "justification_score": 92,
+      "justification_rationale": "Cost per MW sits notably below the plain-terrain benchmark median, and both sources closely agree on sanctioned, disbursed, and utilized figures. This spend appears efficient relative to the benchmark, with no evidence of overrun or source conflict.",
+      "transparency_score": 100,
+      "transparency_conflicts": [],
+      "debate_transcript": {
+        "turns": [
+          {
+            "agent": "red",
+            "stance": "excessive",
+            "arguments": [
+              {
+                "claim": "No overrun found; cost per MW is below the plain-terrain median.",
+                "evidence": "Utilized cost per MW sits below the benchmark median for this sector and terrain.",
+                "figure": "≈0.78x median plain-terrain benchmark"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "blue",
+            "stance": "justified",
+            "arguments": [
+              {
+                "claim": "Below-median cost is consistent with recent declines in utility-scale solar construction costs.",
+                "evidence": "Both sources closely agree on all three figures, with no unusual scope claimed.",
+                "figure": "cost/MW well within efficient range"
+              }
+            ],
+            "verdict": null,
+            "score": null,
+            "rationale": null
+          },
+          {
+            "agent": "council",
+            "stance": null,
+            "arguments": [],
+            "verdict": "well_justified",
+            "score": 92,
+            "rationale": "Cost per MW sits notably below the plain-terrain benchmark median, and both sources closely agree on sanctioned, disbursed, and utilized figures. This spend appears efficient relative to the benchmark, with no evidence of overrun or source conflict."
+          }
+        ]
+      },
+      "scored_at": "2026-07-06T16:30:16.659330+00:00",
+      "model_versions": {
+        "red": "hand-authored-seed-v1",
+        "blue": "hand-authored-seed-v1",
+        "council": "hand-authored-seed-v1",
+        "extraction": "manual"
+      },
+      "justification_band": "well_justified",
+      "transparency_band": "consistent"
+    }
+  }
+]

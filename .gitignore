@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Env / secrets
+.env
+
+# Data (generated, not source-controlled — regenerate via pipeline scripts)
+data/bharat_ledger.sqlite
+data/synthetic/*.csv
+data/synthetic/*.parquet
+# Real government PDFs ARE tracked (small, and the provenance for the flagship project)
+
+# Node / frontend
+web/node_modules/
+web/dist/
+
+# OS
+.DS_Store
+
+# Internal planning notes — not part of the public repo
+agent.md

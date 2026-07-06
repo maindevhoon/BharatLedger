@@ -1,0 +1,35 @@
+# Bharat Ledger — Python dependencies (pipeline + api)
+# Install: pip3 install -r requirements.txt
+#
+# Everything here works with USE_BIGQUERY=false / USE_VERTEX_AI=false / USE_DOCUMENT_AI=false
+# (the default, fully-offline configuration). The GCP-specific packages are only exercised
+# once those flags are flipped on and `gcloud auth application-default login` has been run.
+
+# ---- core ----
+pydantic>=2.6
+python-dotenv>=1.0
+
+# ---- data generation / analysis ----
+pandas>=2.2
+numpy>=1.26
+faker>=24.0
+
+# ---- PDF extraction (fallback path, no GCP needed) ----
+pymupdf>=1.24
+
+# ---- API (online plane) ----
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# ---- Google Cloud (only used when USE_BIGQUERY / USE_VERTEX_AI / USE_DOCUMENT_AI are true) ----
+google-cloud-bigquery>=3.20
+google-cloud-aiplatform>=1.47
+google-cloud-documentai>=2.26
+google-genai>=1.0
+
+# ---- ADK (agent orchestration, Phase 3) ----
+google-adk>=1.0
+
+# ---- notebook (Phase 4, run on Colab — listed here for completeness/local dev) ----
+jupyter>=1.0
+matplotlib>=3.8
