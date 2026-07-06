@@ -1,0 +1,8 @@
+# Slim dependency set for the Vercel serverless deployment of the API only.
+# Vercel's Python builder prefers a requirements.txt colocated with the function entry point
+# (api/) over the repo-root one, which also includes heavy packages (pandas, google-cloud-*,
+# jupyter, matplotlib) needed only for the offline pipeline/notebook, not for serving requests.
+# The online plane (api/main.py and everything it imports from pipeline/) only needs these.
+fastapi>=0.110
+pydantic>=2.6
+python-dotenv>=1.0
