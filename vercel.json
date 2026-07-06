@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "web/package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } },
+    { "src": "web/dist/**", "use": "@vercel/static" },
     { "src": "api/index.py", "use": "@vercel/python" }
   ],
   "routes": [
