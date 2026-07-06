@@ -1,5 +1,10 @@
-# Bharat Ledger — Python dependencies (pipeline + api)
-# Install: pip3 install -r requirements.txt
+# Bharat Ledger — Python dependencies for LOCAL DEVELOPMENT (the offline pipeline + local API run)
+# Install: pip3 install -r requirements-dev.txt
+#
+# NOTE: this file is intentionally NOT named requirements.txt at the repo root, so Vercel's
+# Python function build doesn't pick it up (it would blow past the 500MB function size limit
+# with pandas/pyarrow/google-cloud-*/jupyter/matplotlib, none of which the deployed API needs —
+# see api/requirements.txt, which Vercel uses instead).
 #
 # Everything here works with USE_BIGQUERY=false / USE_VERTEX_AI=false / USE_DOCUMENT_AI=false
 # (the default, fully-offline configuration). The GCP-specific packages are only exercised
@@ -13,6 +18,7 @@ python-dotenv>=1.0
 pandas>=2.2
 numpy>=1.26
 faker>=24.0
+pyarrow>=15.0
 
 # ---- PDF extraction (fallback path, no GCP needed) ----
 pymupdf>=1.24

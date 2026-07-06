@@ -25,3 +25,5 @@ PLAN.md
 pitch-deck-content.md
 docs/*.md
 Prototype Submission Deck*.pdf
+.vercel
+.env*
